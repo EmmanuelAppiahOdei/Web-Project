@@ -1,0 +1,307 @@
+/* Design by Emmanuel Appiah*/
+
+@charset "utf-8";
+/*Keeping the words at that font and their colours*/
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	color:black;
+	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	
+}
+
+html, .main {
+	padding:0;
+	margin:0;
+}
+/*Arranging the words correctly in lane*/
+.clr {
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0;
+	line-height:0;
+}
+
+h2 {
+	margin:8px 0;
+	padding:8px 0;
+	font-size:26px;
+	font-weight:normal;
+	color:#212121;
+}
+p {
+	margin:8px 0;
+	padding:0 0 8px 0;
+}
+
+
+/*Keeping the bar at that size*/
+/*
+.header_resize {
+	margin:0 auto;
+	padding:0;
+	width:960px;
+}
+*/
+
+
+.menu_nav {
+	margin:0 auto 16px;
+	padding:0;
+	height:51px;
+	background:grey;
+}
+
+/*Keeping the about us the rest at the left and also making it bold as it is*/
+.menu_nav ul {
+	list-style:none;
+	padding:16px 0;
+	height:51px;
+	float:right;
+	font-weight:bold;
+}
+
+nav ul li.logo
+{
+	float:left;
+}
+
+
+.menu_nav ul li {	
+	margin:0;
+	padding:0;
+	float:left;
+	height:60px;
+	
+	font-weight:bold;
+}
+
+.menu_nav ul li a {
+	display:block;
+	margin:0;
+	padding:0 24px;
+	font-size:13px;
+	line-height:18px;
+	font-weight:normal;
+	color:black;
+	text-decoration:none;
+	text-transform:none;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*Changes to the about us as the mouse is on it*/
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+	text-decoration:;
+	color:#fff;
+}
+
+/*Keeping the alignment in touch as they are*/
+
+.content_resize {
+	margin:0 auto;
+	padding:24px 0 40px;
+	width:960px;
+}
+
+.content .mainbar {
+	margin:0;
+	padding:0;
+	float:right;
+	width:690px;
+}
+
+/*Keeping space within the body ie for the goals and the about us words*/
+.content .mainbar h2 {
+	margin-bottom:0;
+	padding-bottom:8px;
+	font-size:26px;
+	line-height:1.2em;
+	color:#212121;
+}
+
+/*Keeping the bothers for the body ie the mission and the the goals*/
+.content .mainbar .article {
+	margin:0 0 8px;
+	padding:6px 20px;
+	border-bottom:1px solid #e8e8e8;
+}
+
+/*Keeping the sponsors where they are without moving */
+.content .sidebar {
+	padding:0;
+	float:left;
+	width:260px;
+}
+
+/*Keeping the words at the left hand side in lane*/
+.content .sidebar .gadget {
+	margin:0 0 12px;
+	padding:12px 20px 24px;
+}
+
+/*Not keeping any bullet or style to the sponsors*/
+ul.sb_menu, ul.ex_menu {
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#6e6e6e;
+}
+
+/*Keeping borders at the bottom of each words at the sponsors side*/
+ul.sb_menu li, ul.ex_menu li {
+	margin:0;
+	border-bottom:1px solid #e8e8e8;
+}
+
+/*To keep space in  the words especially with sponsors*/ 
+ul.sb_menu li, ul.ex_menu li {
+	padding:8px 0;
+	width:220px;
+}
+
+/*Keeping  the words bold for the sponsors*/
+ul.ex_menu li a {
+	font-weight:bold;
+	color:black;
+	text-decoration:none;
+}
+
+
+
+
+/*To keep the words in alignment*/
+.fbg_resize {
+	margin:0 auto;
+	width:920px;
+	padding:16px 20px;
+	color:#666464;
+	border-top:1px solid #e8e8e8;
+}
+
+/*To keep space in the words*/
+.fbg h2 {
+	color:#212121;
+	padding-bottom:24px;
+	font-size:24px;
+}
+
+/*For the horizontal alignment of the footer*/
+.fbg .col {
+	margin:0;
+	float:left;
+}
+
+/*This side is for the footer decoration and  words*/
+.fbg .c1 {
+	padding:0 16px 0 0;
+	width:280px;
+}
+
+.fbg .c2 {
+	padding:0 36px 0 16px;
+	width:280px;
+}
+
+/*Keeping the inscription in line at the footer without any style*/
+.fbg .fbg_ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+.fbg .fbg_ul li a {
+	display:block;
+	margin:0;
+	padding:2px 0 2px 12px;
+	color:#666464;
+	text-decoration:none;
+}
+
+/*Keeping the words on the page in shape*/
+.fbg p.contact_info {
+	line-height:1.8em;
+}
+
+/*Keeping the space for the words at the footer for the service and contact us*/
+.fbg p.contact_info a {
+	color:#212121;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.fbg p.contact_info span {
+	display:block;
+	float:left;
+	width:74px;
+	font-weight:bold;
+}
+
+/*The codes here is able to arrange the text view and the boxes as they are*/
+
+ol {
+	list-style:none;
+}
+
+
+ol li label {
+	display:block;
+	margin:0;
+	padding:16px 0 0 0;
+}
+
+ol li input.text {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:5px 2px;
+	height:16px;
+	background-color:#fff;
+}
+ol li textarea {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:2px;
+	background-color:#fff;
+}
+ol li .send {
+	margin:16px 0 0 0;
+}
+
+
+
+
+/*Keeping the words right for the copyright and the design by*/
+.footer_resize {
+	margin:0 auto;
+	padding:0 20px;
+	width:920px;
+	line-height:1.5em;
+	color:green;
+	border-top:1px solid #e8e8e8;
+}
+
+.footer_resize a {
+	color:grey;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	border:none;
+	text-decoration:;
+	background-color:transparent;
+}
+/*Keeping the copy right and the design at the right places*/
+.footer_resize .lf {
+	float:left;
+}
+.footer_resize .rf {
+	float:right;
+}
+a {
+	outline:none;
+}
