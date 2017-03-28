@@ -1,0 +1,18 @@
+Route::get('/', function () {
+//    return "Hello world";
+    return view('welcome');
+});
+
+//Route for add new task
+
+Route::get('/add_task',function(){
+    return view('add');
+});
+
+
+Auth::routes();
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
