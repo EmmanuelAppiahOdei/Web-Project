@@ -1,0 +1,9 @@
+ <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-comments"></i> <span> Comment </span> <span class="menu-arrow"></span> </a>
+                    <ul class="list-unstyled">
+                      <li><a href="{{url(route('comments.create'))}}">Post Comments</a></li>
+                        <li><a href="{{url(route('comments.index'))}}">View Comments</a></li>
+
+
+                    </ul>
+                </li>
