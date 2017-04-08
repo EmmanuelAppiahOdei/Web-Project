@@ -1,0 +1,30 @@
+ public function index()
+    {
+        //Getting all tasks
+        $tasks = Task::latest()->orderBy('created_at','desc')->get();
+        if($tasks->count()<1) {
+            Session::flash('warning', 'No tasks found');
+            return view('all', compact('tasks'));
+        }
+        else{
+//            Session::flash('info', $tasks->count().' task(s) found');
+            return view('all',compact('tasks'));
+
+        }
+
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+        Session::flash('info',' Add a task');
+
+        return view('add');
+    }
+
+    /**
