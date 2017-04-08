@@ -1,0 +1,29 @@
+@extends('layouts.theme')
+
+@section('working_area')
+
+    <div class="col-lg-6">
+        <div class="card-box col-md-offset-3"> 
+         {!! Form::open(['route'=>'comments.store','class'=>'form form-horizontal']) !!}
+            
+            <div class="form-group {{ $errors->has('body') ? ' has-error' : '' }}">
+
+            {!! Form::label('body','Your Comment',null,['class'=>'control-label']) !!}
+                {!! Form::textarea('body',null,['class'=>'form-control']) !!}
+                @if ($errors->has('body'))
+                    <span class="help-block">
+                 <strong>{{ $errors->first('body') }}</strong>
+                                    </span>
+                @endif
+            </div>
+     
+                {!! Form::submit('Create Comments',['class'=>'btn btn-primary btn-lg btn-block']) !!}
+
+
+            {!! Form::close() !!}
+
+            </div>
+            
+            </div>
+
+    @endsection
