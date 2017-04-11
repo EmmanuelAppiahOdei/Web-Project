@@ -1,0 +1,12 @@
+  public function destroy($id)
+    {
+        //
+
+        $articles = Article::find($id);
+
+        $articles->delete();
+
+        \Session::flash('success','Article delete successfully');
+        return redirect(route('article.index'));
+    }
+}
