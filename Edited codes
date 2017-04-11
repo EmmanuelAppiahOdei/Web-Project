@@ -1,0 +1,31 @@
+  public function edit($id)
+    {
+        //
+        $articles = Article::find($id);
+
+
+        return view('articles.edit')->withArticle($articles);
+    
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(ArticleRequest $request, $id)
+    {
+        //
+
+        $articles = Article::find($id);
+
+        $articles->title =$request->title;
+         $articles->body =$request->body;
+          $articles->description =$request->description;
+           $articles->save();
+
+           \Session::flash('success','Article edited Sucessfully');
+           return redirect(route('article.index'));
+}
